@@ -252,15 +252,6 @@ private:
   float genLepPy[100];
   float genLepPz[100];
 
-  int genPhotLength;
-  int genPhotIds[100];
-  int genPhotRefs[100];
-  int genPhotStatus[100];
-  float genPhotE[100];
-  float genPhotPx[100];
-  float genPhotPy[100];
-  float genPhotPz[100];
-
   bool init_;                          // vectors initialised or not
 
 
