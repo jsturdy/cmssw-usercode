@@ -19,13 +19,13 @@ jetAnalyzer = cms.untracked.PSet(
     useJPTJets   = cms.untracked.bool(True),
     useCaloJets  = cms.untracked.bool(True),
     useTrackJets = cms.untracked.bool(True),
-    pfJetTag     = cms.untracked.InputTag("cleanPatJetsAK5PF"),
-    jptJetTag    = cms.untracked.InputTag("cleanPatJetsAK5JPT"),
-    caloJetTag   = cms.untracked.InputTag("cleanPatJetsAK5Calo"),
-    trackJetTag  = cms.untracked.InputTag("cleanPatJetsAK5Track"),
+    pfJetTag     = cms.untracked.InputTag("cleanLayer1JetsAK5PF"),
+    jptJetTag    = cms.untracked.InputTag("cleanLayer1JetsAK5JPT"),
+    caloJetTag   = cms.untracked.InputTag("cleanLayer1JetsAK5"),
+    trackJetTag  = cms.untracked.InputTag("cleanLayer1JetsAK5Track"),
 
     #htTag        = cms.InputTag("htTag"),
-    #mhtTag       = cms.InputTag("patMHTsK5Calo"),
+    #mhtTag       = cms.InputTag("patMHTsAK5"),
 
     debugJets = cms.untracked.int32(0)
 

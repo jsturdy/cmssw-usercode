@@ -8,7 +8,7 @@ metAnalyzer = cms.untracked.PSet(
     doTcMET   = cms.untracked.bool(True),
     
     genMETTag = cms.untracked.InputTag("genMetCalo"),
-    metTag    = cms.untracked.InputTag("patMETsAK5Calo"),
+    metTag    = cms.untracked.InputTag("patMETsAK5"),
     pfmetTag  = cms.untracked.InputTag("patMETsPF"),
     tcmetTag  = cms.untracked.InputTag("patMETsTC"),
 
