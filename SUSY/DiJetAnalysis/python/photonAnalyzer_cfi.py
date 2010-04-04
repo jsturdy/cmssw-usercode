@@ -11,7 +11,8 @@ photonAnalyzer = cms.untracked.PSet(
     debugPhots = cms.untracked.int32(0),
     genPhotTag = cms.untracked.InputTag("genParticles"),
     
-    photTag   = cms.untracked.InputTag("cleanLayer1Photons"),
-    pfphotTag = cms.untracked.InputTag("pfLayer1Photons")
+    photTag   = cms.untracked.InputTag("cleanPatPhotons"),
+    #does not work!
+    pfphotTag = cms.untracked.InputTag("pfPatPhotons") 
 )
                  

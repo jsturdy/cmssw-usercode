@@ -21,11 +21,13 @@ leptonAnalyzer = cms.untracked.PSet(
     debugLeps = cms.untracked.int32(0),
     genLepTag = cms.untracked.InputTag("genParticles"),
     
-    elecTag   = cms.untracked.InputTag("cleanLayer1Electrons"),
-    pfelecTag = cms.untracked.InputTag("pfLayer1Electrons"),
-    muonTag   = cms.untracked.InputTag("cleanLayer1Muons"),
-    pfmuonTag = cms.untracked.InputTag("pfLayer1Muons")
-    #tauTag   = cms.untracked.InputTag("cleanLayer1Taus"),
-    #pftauTag = cms.untracked.InputTag("pfLayer1Taus")
+    elecTag   = cms.untracked.InputTag("cleanPatElectrons"),
+    pfelecTag = cms.untracked.InputTag("particleFlow_Electrons"),
+    muonTag   = cms.untracked.InputTag("cleanPatMuons"),
+    #do not work!
+    pfmuonTag = cms.untracked.InputTag("particleFlow_Muons")
+    #tauTag   = cms.untracked.InputTag("cleanPatTaus"),
+    #do not work!
+    #pftauTag = cms.untracked.InputTag("pfPatTaus")
 )
                  
