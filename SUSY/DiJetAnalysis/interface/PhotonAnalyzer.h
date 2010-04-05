@@ -44,7 +44,7 @@ class PhotonAnalyzer {
   
   //*** CMSSW interface
   /// Called once per job, at start
-  void beginJob(const edm::EventSetup&) ;
+  void beginJob();
   /// Called for each event
   //void analyze(const edm::Event&, const edm::EventSetup&);
   bool filter(const edm::Event& evt,const edm::EventSetup& iSetup );
@@ -114,13 +114,13 @@ private:
   //
 
   int genPhotLength;
-  int genPhotIds[275];
-  int genPhotRefs[275];
-  int genPhotStatus[275];
-  float genPhotE[275];
-  float genPhotPx[275];
-  float genPhotPy[275];
-  float genPhotPz[275];
+  int genPhotIds[500];
+  int genPhotRefs[500];
+  int genPhotStatus[500];
+  float genPhotE[500];
+  float genPhotPx[500];
+  float genPhotPy[500];
+  float genPhotPz[500];
 
 
   bool init_;                          // vectors initialised or not

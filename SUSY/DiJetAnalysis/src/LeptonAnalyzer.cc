@@ -12,7 +12,7 @@ Description: Variable collector/ntupler for SUSY search with Jets + MET
 //
 // Original Author:  Jared Sturdy
 //         Created:  Fri Jan 29 16:10:31 PDT 2010
-// $Id: LeptonAnalyzer.cc,v 1.3 2010/04/04 00:04:01 sturdy Exp $
+// $Id: LeptonAnalyzer.cc,v 1.4 2010/04/04 02:37:18 sturdy Exp $
 //
 //
 
@@ -124,7 +124,7 @@ LeptonAnalyzer::filter(const edm::Event& iEvent, const edm::EventSetup& iSetup)
     Handle<reco::GenParticleCollection>  genParticles;
     iEvent.getByLabel(genTag_, genParticles);   
     
-    int count=0; int lcount=0; // int tcount=0;
+    int count=0; int lcount=0;  // int tcount=0;
     if (debug_>1) printf("Status   genpart/%d   PdgId   genE   genPx   genPy   genPz   genMother\n",genParticles->size());
     for( size_t i = 0; i < genParticles->size(); ++ i ) {
       const reco::Candidate& pCand = (*genParticles)[ i ];
@@ -507,7 +507,7 @@ LeptonAnalyzer::filter(const edm::Event& iEvent, const edm::EventSetup& iSetup)
 
 //________________________________________________________________________________________
 void 
-LeptonAnalyzer::beginJob(const edm::EventSetup&) {}
+LeptonAnalyzer::beginJob() {}
 
 //________________________________________________________________________________________
 void 
