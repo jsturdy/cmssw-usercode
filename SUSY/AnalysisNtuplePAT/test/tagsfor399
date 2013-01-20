@@ -1,9 +1,0 @@
-addpkg CommonTools/CandUtils                    V00-00-05      
-addpkg DataFormats/CaloTowers                   V02-05-11              
-addpkg DataFormats/PatCandidates                V06-02-21              
-addpkg ElectroWeakAnalysis/WENu                 V00-03-00              
-addpkg JetMETCorrections/Type1MET               V04-04-01              
-addpkg MuonAnalysis/MuonAssociators             V01-11-00              
-addpkg PhysicsTools/Configuration               V00-09-00              
-addpkg PhysicsTools/PatAlgos                    V08-03-11              
-addpkg RecoEgamma/ElectronIdentification        V00-03-19              
